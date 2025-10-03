@@ -1,0 +1,153 @@
+/* Custom properties for the "ink" and "paper" colors */
+:root {
+    --ink-blue: #004d99; /* Deep blue like ink */
+    --accent-red: #cc527a; /* Wax seal color */
+    --paper-white: #fefefe;
+    --background-blue: #1c2e4a; /* Dark background like the laptop */
+}
+
+body {
+    font-family: cursive, sans-serif; /* Use cursive for a handwritten feel */
+    background-color: var(--background-blue);
+    color: var(--ink-blue);
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.website-container {
+    width: 100%;
+    max-width: 650px;
+}
+
+.card-page {
+    background-color: var(--paper-white);
+    border: 3px solid var(--ink-blue); /* Main card border */
+    border-radius: 10px;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.2); /* Lifted look */
+    text-align: center;
+}
+
+/* --- Specific Page Styles --- */
+
+/* Page 1: Title & Wax Seal */
+.title-page {
+    padding-top: 50px;
+}
+
+.wax-seal {
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent-red);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    position: relative;
+    /* Optional: Add a simple heart shape with pseudo-elements */
+    box-shadow: 0 0 0 5px rgba(204, 82, 122, 0.3); 
+}
+
+h1 {
+    font-family: fantasy, cursive;
+    color: var(--ink-blue);
+    font-size: 3em;
+    margin: 0 0 5px;
+    line-height: 1.1;
+}
+
+.date {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    border-bottom: 1px dashed var(--ink-blue);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Page 2: Letter Content */
+.letter-page {
+    text-align: left;
+}
+
+.header-line {
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 3px double var(--ink-blue); /* Double line border for emphasis */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.body-text {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-indent: 1.5em; /* Indent paragraphs like a letter */
+    font-size: 1.1em;
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+
+/* Page 4: RSVP/Date */
+.rsvp-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-question {
+    border-bottom: 2px solid var(--ink-blue);
+}
+
+.checkbox-container {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--ink-blue);
+    margin: 0 10px;
+    line-height: 25px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    color: var(--accent-red);
+}
+
+.checked-box {
+    background-color: var(--ink-blue);
+    color: var(--paper-white);
+}
+
+.reminder {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* Page 5: Hint */
+.hint-page {
+    padding: 30px;
+}
+
+.dress-code {
+    font-size: 3.5em;
+    color: var(--accent-red);
+    margin: 10px 0;
+    text-shadow: 2px 2px var(--ink-blue);
+}
+
+.see-you {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
